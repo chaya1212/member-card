@@ -1,0 +1,42 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+  /* 背景長寬固定 */
+  .section_cantainer{
+    @apply relative h-screen w-96 mx-auto  bg-[#F2CF4B];
+  }
+
+  .section_bg{
+    @apply bg-center bg-cover bg-img-bg;
+  }
+
+  /* button */
+  .btn_md{
+    @apply w-[5vw] h-[5vw] max-w-[40px] max-h-[40px] bg-center ;
+  }
+
+  .btn_highlight{
+    @apply bg-[#25E9F2] ;
+  }
+
+  .btn_hover{
+    @apply bg-[#2fced6] ;
+  }
+
+  .btn_focus{
+    @apply bg-[#FB7AC0] ;
+  }
+
+  .btn_shadow{
+    @apply shadow-[2px_2px_0_1px_black] bg-no-repeat bg-[size:2rem] ;
+  }
+
+  .btn_border{
+    @apply border border-black;
+  }
+}
+
